@@ -30,7 +30,7 @@ class Json
 
     public function __toString()
     {
-        if ($this->depth !== 512 && PHP_VERSION_ID > 504000) {
+        if ($this->depth !== 512 && PHP_VERSION_ID > 50500) {
             $result = json_encode($this->value, $this->options, $this->depth);
         } else {
             $result = json_encode($this->value, $this->options);
