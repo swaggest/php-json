@@ -30,7 +30,11 @@ class Json
 
     public function __toString()
     {
-        $result = json_encode($this->value, $this->options, $this->depth);
+        if ($this->depth !== 512) {
+            $result = json_encode($this->value, $this->options, $this->depth);
+        } else {
+            $result = json_encode($this->value, $this->options);
+        }
         $result = str_replace(array('"' . RawJson::MARKER, RawJson::MARKER . '"'), '', $result);
         return $result;
     }
