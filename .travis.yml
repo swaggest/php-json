@@ -1,0 +1,28 @@
+language: php
+php:
+  - nightly
+  - hhvm
+  - 7.1
+  - 7.0
+  - 5.6
+  - 5.5
+  - 5.4
+  - 5.3
+
+sudo: false
+
+before_script:
+  - composer install --dev --no-interaction
+
+matrix:
+  allow_failures:
+    - php: hhvm
+    - php: nightly
+  fast_finish: true
+
+script:
+  - ./vendor/bin/phpunit -v --configuration phpunit.xml --coverage-text ./tests/
+
+cache:
+  directories:
+    - $HOME/.composer/cache

@@ -1,0 +1,21 @@
+{
+    "name": "swaggest/json",
+    "description": "JSON encoder with RAW support",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Viacheslav Poturaev",
+            "email": "vearutop@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swaggest\\Json\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0"
+    }
+}
