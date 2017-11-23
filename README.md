@@ -5,7 +5,6 @@ JSON encoder with RAW support
 [![Build Status](https://travis-ci.org/swaggest/php-json.svg?branch=master)](https://travis-ci.org/swaggest/php-json)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/swaggest/php-json/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/swaggest/php-json/?branch=master)
 [![Code Climate](https://codeclimate.com/github/swaggest/php-json/badges/gpa.svg)](https://codeclimate.com/github/swaggest/php-json)
-[![Test Coverage](https://codeclimate.com/github/swaggest/php-json/badges/coverage.svg)](https://codeclimate.com/github/swaggest/php-json/coverage)
 
 ## Installation
 
